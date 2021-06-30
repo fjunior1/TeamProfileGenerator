@@ -11,7 +11,7 @@ Application that creates a team contact information.
 - [REQUIREMENTS](#Requirements)
 - [INSTALLATION](#Installation)
 - [USAGE](#Usage)
-- [TOOLS](#Packages and tools used)
+- [TOOLS](#Packages-and-tools-used)
 - [](#)
 - [](#)
 - [](#)
@@ -72,7 +72,7 @@ Steps:
 
   4. When finished answering the questions, the applicaiton will create an HTML page located in folder /output named index.html.
 
-## Packages and tools used
+## Packages-and-tools-used
     - Node     [https://nodejs.dev/]
     - jest     [https://jestjs.io/]
     - inquirer [https://www.npmjs.com/package/inquirer] 
