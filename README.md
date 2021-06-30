@@ -9,9 +9,9 @@ Application that creates a team contact information.
 ## Table of Contents
 - [DESCRIPTION](#Description)
 - [REQUIREMENTS](#Requirements)
-- [](#)
-- [](#)
-- [](#)
+- [INSTALLATION](#Installation)
+- [USAGE](#Usage)
+- [TOOLS](#Packages and tools used)
 - [](#)
 - [](#)
 - [](#)
@@ -45,3 +45,35 @@ THEN I am prompted to enter the intern’s name, ID, email, and school, and I am
 
 > WHEN I decide to finish building my team
 THEN I exit the application, and the HTML is generated
+
+
+## Installation
+ 
+Steps:
+
+  1. Clone the repository from github https://github.com/fjunior1/TeamProfileGenerator
+   using git clone 
+ 
+  2. Verify node.js is installed from https://nodejs.org/en/download/
+
+  3. initialize package.json by running the command "npm init" and answering the questions. Note: the following commands when installing packages will upate this package.json file.
+
+  4. Verify inquirer is installed with the command "npm i inquirer" 
+
+  5. Verify jest is installed with the comand "npm i jest" 
+
+
+## Usage
+  1. open a terminal window and go to the project folder
+
+  2. run the applicaiton using the command: "node index.js"
+
+  3. Answer the questions asked (add manager, employees and their correspongding data)
+
+  4. When finished answering the questions, the applicaiton will create an HTML page located in folder /output named index.html.
+
+## Packages and tools used
+    - Node     [https://nodejs.dev/]
+    - jest     [https://jestjs.io/]
+    - inquirer [https://www.npmjs.com/package/inquirer] 
+    - fs       [https://nodejs.org/api/fs.html#fs_file_system]
