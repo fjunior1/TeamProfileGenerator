@@ -60,7 +60,9 @@ Steps:
 
   4. Verify inquirer is installed with the command "npm i inquirer" 
 
-  5. Verify jest is installed with the comand "npm i jest" 
+  5. Verify inquire-loop is installed with command "npm install --save inquirer-loop"
+
+  6. Verify jest is installed with the comand "npm i jest" 
 
 
 ## Usage
@@ -77,14 +79,19 @@ Each component of the application is tested with jest.
 
 
 ## Packages-and-tools-used
-    - Node     [https://nodejs.dev/]
-    - jest     [https://jestjs.io/]
-    - inquirer [https://www.npmjs.com/package/inquirer] 
-    - fs       [https://nodejs.org/api/fs.html#fs_file_system]
+    - Node            [https://nodejs.dev/]
+    - jest            [https://jestjs.io/]
+    - inquirer        [https://www.npmjs.com/package/inquirer]
+    - Inuquirer loop  [https://www.npmjs.com/package/inquirer-loop] 
+    - fs              [https://nodejs.org/api/fs.html#fs_file_system]
     websites:
-    - cards    [https://www.w3schools.com/howto/howto_css_cards.asp]
+    - cards           [https://www.w3schools.com/howto/howto_css_cards.asp]
     - materialize CSS [https://www.tutorialspoint.com/materialize/materialize_cards.htm]
+    - cloud convert   [https://cloudconvert.com/mp4-to-gif] 
 
 ## License
-GNU General Public License 3.0
+GNU General Public License 3.0  
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
+## Example
+![example running app](./dist/test-video.gif)
