@@ -45,41 +45,41 @@ describe("intern class test", () => {
 
         it("should exercise id getter and setter properly", () => {
 
-            // test original name
+            // test original id
             expect(Testintern.getId()).toEqual("1001");
-            // setter with new name
+            // setter with new id
             Testintern.setId("1234");
-            // test getter with new name
+            // test getter with new id
             expect(Testintern.getId()).toEqual("1234");
         });
 
         it("should exercise email getter and setter properly", () => {
 
-            // test original name
+            // test original email
             expect(Testintern.getEmail()).toEqual("email");
-            // setter with new name
+            // setter with new email
             Testintern.setEmail("test@test.com");
-            // test getter with new name
+            // test getter with new email
             expect(Testintern.getEmail()).toEqual("test");
         });
 
         it("should exercise role getter and setter properly", () => {
 
-            // test original name
+            // test original role
             expect(Testintern.getRole()).toEqual("internineer");
-            // setter with new name
+            // setter with new role
             Testintern.setRole("testRole");
-            // test getter with new name
+            // test getter with new role
             expect(Testintern.getRole()).toEqual("testRole");
         });
 
         it("should exercise school getter and setter properly", () => {
 
-            // test original name
+            // test original school
             expect(Testintern.getSchool()).toEqual("GATECH");
-            // setter with new name
+            // setter with new school
             Testintern.setSchool("USF");
-            // test getter with new name
+            // test getter with new school
             expect(Testintern.getSchool()).toEqual("USF");
         });
 

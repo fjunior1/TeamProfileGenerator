@@ -11,8 +11,9 @@ Application that creates a team contact information.
 - [REQUIREMENTS](#Requirements)
 - [INSTALLATION](#Installation)
 - [USAGE](#Usage)
+- [TESTS](#Tests)
 - [TOOLS](#Packages-and-tools-used)
-- [](#)
+
 - [](#)
 - [](#)
 
@@ -71,6 +72,10 @@ Steps:
   3. Answer the questions asked (add manager, employees and their correspongding data)
 
   4. When finished answering the questions, the applicaiton will create an HTML page located in folder /output named index.html.
+
+## Tests
+Each component of the application is tested with jest.
+
 
 ## Packages-and-tools-used
     - Node     [https://nodejs.dev/]

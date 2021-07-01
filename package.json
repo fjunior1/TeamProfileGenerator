@@ -1,0 +1,28 @@
+{
+  "name": "teamprofilegenerator",
+  "version": "1.0.0",
+  "description": "Team profile HTML generator. This project creates a list of team members with important contact information for each.",
+  "main": "index.js",
+  "dependencies": {
+    "inquirer": "^8.1.1",
+    "jest": "^27.0.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fjunior1/TeamProfileGenerator.git"
+  },
+  "keywords": [
+    "team",
+    "profiles"
+  ],
+  "author": "Franklyn Diaz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fjunior1/TeamProfileGenerator/issues"
+  },
+  "homepage": "https://github.com/fjunior1/TeamProfileGenerator#readme"
+}

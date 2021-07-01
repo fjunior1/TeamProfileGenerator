@@ -27,7 +27,7 @@ describe("mgr class test", () => {
     });
 
     describe("getters and setters", () => {
-        const Testmgr = new mgr("John", "1001", "John@email.com");
+        const Testmgr = new mgr("John", "1001", "John@email.com", "1234");
 
         it("should exercise name getter and setter properly", () => {
 
