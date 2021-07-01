@@ -82,7 +82,7 @@ Each component of the application is tested with jest.
     - Node            [https://nodejs.dev/]
     - jest            [https://jestjs.io/]
     - inquirer        [https://www.npmjs.com/package/inquirer]
-    - Inuquirer loop  [https://www.npmjs.com/package/inquirer-loop] 
+    - Inquirer loop  [https://www.npmjs.com/package/inquirer-loop] 
     - fs              [https://nodejs.org/api/fs.html#fs_file_system]
     websites:
     - cards           [https://www.w3schools.com/howto/howto_css_cards.asp]
