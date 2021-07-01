@@ -86,4 +86,5 @@ Each component of the application is tested with jest.
     - materialize CSS [https://www.tutorialspoint.com/materialize/materialize_cards.htm]
 
 ## License
+GNU General Public License 3.0
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
