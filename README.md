@@ -13,8 +13,7 @@ Application that creates a team contact information.
 - [USAGE](#Usage)
 - [TESTS](#Tests)
 - [TOOLS](#Packages-and-tools-used)
-
-- [](#)
+- [LICENSE](#License)
 - [](#)
 
 
@@ -82,3 +81,9 @@ Each component of the application is tested with jest.
     - jest     [https://jestjs.io/]
     - inquirer [https://www.npmjs.com/package/inquirer] 
     - fs       [https://nodejs.org/api/fs.html#fs_file_system]
+    websites:
+    - cards    [https://www.w3schools.com/howto/howto_css_cards.asp]
+    - materialize CSS [https://www.tutorialspoint.com/materialize/materialize_cards.htm]
+
+## License
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
