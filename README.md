@@ -70,7 +70,7 @@ Steps:
 
   2. run the applicaiton using the command: "node index.js"
 
-  3. Answer the questions asked (add manager, employees and their correspongding data)
+  3. Answer the questions asked (add manager, employees and their corresponding data)
 
   4. When finished answering the questions, the applicaiton will create an HTML page located in folder /output named index.html.
 

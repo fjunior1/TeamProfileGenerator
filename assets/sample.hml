@@ -1,0 +1,81 @@
+<!-- This is the sample HTML 5 generated code to use in this homework
+we are dividin g it into begin part and end part of the html, cutting
+were the cards will go into.
+To get this code just type html:5 and then ENTER-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Adding content here from web to get icons and card presentation utilities -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- end of extra contant -->
+    <title>Team Profile</title>
+</head>
+<body>
+    <nav>
+        <div class="navCls" id="navId">
+            <h1 class="center">Team Profile</h1><span><i class="material-icons" style="font-size: 4.2rem;">&nbsp;&nbsp;people</i></span>
+        </div>
+    </nav>
+
+    <div class="container">    
+        
+        <div class="row">
+       
+            <!-- @@@@@@@@@@@  this is were the cards will go @@@@@@@@@@ -->
+
+        </div>  
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
+
+<!--  beginning part of HTML  
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!- - Adding content here from web to get icons and card presentation utilities - ->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!- - end of extra contant - ->
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="navCls" id="navId">
+            <h1 class="center">Team profile</h1><span><i class="material-icons" style="font-size: 4.2rem;">&nbsp;&nbsp;members</i></span>
+        </div>
+    </nav>
+
+    <div class="container">    
+        
+        <div class="row">
+
+
+
+ -->
+
+ <!-- End part of HTML
+
+        </div>
+            
+    </div> 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
+
+
+-->
