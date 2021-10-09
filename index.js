@@ -213,21 +213,23 @@ function ProcessUserInput() {
                 console.log(answers.Employees[i]);
                 if (answers.Employees[i].role === "engineer") {
                     let tmpEng = new Eng(answers.Employees[i].name,
-                                        answers.Employees[i].id,
-                                        answers.Employees[i].email,
-                                        answers.Employees[i].github);
-                    generateCards.addEngCard( answers.Employees[i]);
+                        answers.Employees[i].id,
+                        answers.Employees[i].email,
+                        answers.Employees[i].github);
+                    generateCards.addEngCard(tmpEng/*answers.Employees[i]*/);
                 } else {
                     // it is an intern
-
-                    generateCards.addInternCard( answers.Employees[i]);
+                    let tmpIntern = new Intern(answers.Employees[i].name,
+                        answers.Employees[i].id,
+                        answers.Employees[i].email,
+                        answers.Employees[i].school);
+                    generateCards.addInternCard(tmpIntern/*answers.Employees[i]*/);
                 }
             }
         }
 
         // closing HTML file contentnode
         htmlStr = generateCards.addEndHTML();
-
 
         //Open file and write the data
         console.log(htmlStr.join(""));
@@ -239,7 +241,6 @@ function ProcessUserInput() {
             }
         });
     });
-
 };
 
 // Automatically call the function to request user input

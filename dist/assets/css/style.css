@@ -2,4 +2,47 @@
 styles for team profile
 */
 
+body{
+    background-color: rgb(241, 241, 250);
+}
+
+.container{
+    margin-top: 15px !important;
+}
+.center {
+     background-color: rgb(32, 70, 194); 
+}
+
+.card .mgr {
+    background-color: rgb(71, 224, 51);
+}
+
+.content {
+    font-size: 20px;
+}
+
+.content .title {
+    font-weight: bold;
+    font-size: 24px;
+    padding-left: 10px;
+}
+
+.material-icons{
+    padding-left: 10px;
+}
+
+.data {
+    font-size: 20px;
+    padding-left: 10px;
+}
+.card .eng {
+    background-color: rgb(106, 108, 243);
+}
+
+
+.card .intern {
+    background-color: rgb(245, 148, 237);
+}
+
+
 
