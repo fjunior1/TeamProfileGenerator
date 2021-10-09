@@ -21,7 +21,7 @@ describe("mgr class test", () => {
             expect(Testmgr.name).toEqual("John");
             expect(Testmgr.id).toEqual("1001");
             expect(Testmgr.email).toEqual("John@email.com");
-            expect(Testmgr.role).toEqual("mgr"); // default behavior
+            expect(Testmgr.role).toEqual("manager"); // default behavior
             expect(Testmgr.officeNum).toEqual("1234");
         })
     });
@@ -32,51 +32,51 @@ describe("mgr class test", () => {
         it("should exercise name getter and setter properly", () => {
 
             // test original name
-            expect(Testmgr.getName()).toEqual("John");
+            expect(Testmgr.Name).toEqual("John");
             // setter with new name
-            Testmgr.setName("Test Name");
+            Testmgr.Name = "Test Name";
             // test getter with new name
-            expect(Testmgr.getName()).toEqual("Test Name");
+            expect(Testmgr.Name).toEqual("Test Name");
         });
 
         it("should exercise id getter and setter properly", () => {
 
             // test original id
-            expect(Testmgr.getId()).toEqual("1001");
+            expect(Testmgr.Id).toEqual("1001");
             // setter with new id
-            Testmgr.setId("1234");
+            Testmgr.Id ="1234";
             // test getter with new id
-            expect(Testmgr.getId()).toEqual("1234");
+            expect(Testmgr.Id).toEqual("1234");
         });
 
         it("should exercise email getter and setter properly", () => {
 
             // test original email
-            expect(Testmgr.getEmail()).toEqual("email");
+            expect(Testmgr.Email).toEqual("John@email.com");
             // setter with new email
-            Testmgr.setEmail("test@test.com");
+            Testmgr.Email = "test@test.com";
             // test getter with new email
-            expect(Testmgr.getEmail()).toEqual("test");
+            expect(Testmgr.Email).toEqual("test@test.com");
         });
 
         it("should exercise role getter and setter properly", () => {
 
             // test original role
-            expect(Testmgr.getRole()).toEqual("mgroyee");
+            expect(Testmgr.Role).toEqual("manager");
             // setter with new role
-            Testmgr.setRole("testRole");
+            Testmgr.Role = "testRole";
             // test getter with new role
-            expect(Testmgr.getRole()).toEqual("testRole");
+            expect(Testmgr.Role).toEqual("testRole");
         });
 
         it("should exercise offcie number getter and setter properly", () => {
 
             // test original office number
-            expect(Testmgr.getOfficeNum()).toEqual("1234");
+            expect(Testmgr.OfficeNum).toEqual("1234");
             // setter with new office number
-            Testmgr.setOfficeNum("4321");
+            Testmgr.OfficeNum = "4321";
             // test getter with new office number
-            expect(Testmgr.getOfficeNum()).toEqual("4321");
+            expect(Testmgr.OfficeNum).toEqual("4321");
         });
 
     });

@@ -1,9 +1,8 @@
 # TeamProfileGenerator
 Application that creates a team contact information.
 
-
 ## Description
-
+This applicaiton get user input and creates a webpage with the cards of employees. each employee has its position , name and other characteristics shown.
 
 
 ## Table of Contents
@@ -14,7 +13,7 @@ Application that creates a team contact information.
 - [TESTS](#Tests)
 - [TOOLS](#Packages-and-tools-used)
 - [LICENSE](#License)
-- [](#)
+- [EXAMPLES](#Examples)
 
 
 ## Requirements

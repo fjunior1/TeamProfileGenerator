@@ -30,41 +30,41 @@ describe("Empl class test", () => {
         it("should exercise name getter and setter properly", () => {
 
             // test original name
-            expect(TestEmpl.getName()).toEqual("John");
+            expect(TestEmpl.Name).toEqual("John");
             // setter with new name
-            TestEmpl.setName("Test Name");
+            TestEmpl.Name = "Test Name";
             // test getter with new name
-            expect(TestEmpl.getName()).toEqual("Test Name");
+            expect(TestEmpl.Name).toEqual("Test Name");
         });
 
         it("should exercise id getter and setter properly", () => {
 
             // test original id
-            expect(TestEmpl.getId()).toEqual("1001");
+            expect(TestEmpl.Id).toEqual("1001");
             // setter with new id
-            TestEmpl.setId("1234");
+            TestEmpl.Id = "1234";
             // test getter with new id
-            expect(TestEmpl.getId()).toEqual("1234");
+            expect(TestEmpl.Id).toEqual("1234");
         });
 
         it("should exercise email getter and setter properly", () => {
 
             // test original email
-            expect(TestEmpl.getEmail()).toEqual("email");
+            expect(TestEmpl.Email).toEqual("John@email.com");
             // setter with new email
-            TestEmpl.setEmail("test@test.com");
+            TestEmpl.Email = "test@test.com";
             // test getter with new email
-            expect(TestEmpl.getEmail()).toEqual("test");
+            expect(TestEmpl.Email).toEqual("test@test.com");
         });
 
         it("should exercise role getter and setter properly", () => {
 
             // test original role
-            expect(TestEmpl.getRole()).toEqual("Employee");
+            expect(TestEmpl.Role).toEqual("Employee");
             // setter with new role
-            TestEmpl.setRole("testRole");
+            TestEmpl.Role = "testRole";
             // test getter with new role
-            expect(TestEmpl.getRole()).toEqual("testRole");
+            expect(TestEmpl.Role).toEqual("testRole");
         });
 
 

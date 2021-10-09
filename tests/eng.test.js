@@ -32,51 +32,51 @@ describe("Eng class test", () => {
         it("should exercise name getter and setter properly", () => {
 
             // test original name
-            expect(TestEng.getName()).toEqual("John");
+            expect(TestEng.Name).toEqual("John");
             // setter with new name
-            TestEng.setName("Test Name");
+            TestEng.Name = "Test Name";
             // test getter with new name
-            expect(TestEng.getName()).toEqual("Test Name");
+            expect(TestEng.Name).toEqual("Test Name");
         });
 
         it("should exercise id getter and setter properly", () => {
 
             // test original id
-            expect(TestEng.getId()).toEqual("1001");
+            expect(TestEng.Id).toEqual("1001");
             // setter with new id
-            TestEng.setId("1234");
+            TestEng.Id = "1234";
             // test getter with new id
-            expect(TestEng.getId()).toEqual("1234");
+            expect(TestEng.Id).toEqual("1234");
         });
 
         it("should exercise email getter and setter properly", () => {
 
             // test original email
-            expect(TestEng.getEmail()).toEqual("email");
+            expect(TestEng.Email).toEqual("John@email.com");
             // setter with new email
-            TestEng.setEmail("test@test.com");
+            TestEng.Email = "test@test.com";
             // test getter with new email
-            expect(TestEng.getEmail()).toEqual("test");
+            expect(TestEng.Email).toEqual("test@test.com");
         });
 
         it("should exercise role getter and setter properly", () => {
 
             // test original role
-            expect(TestEng.getRole()).toEqual("Engineer");
+            expect(TestEng.Role).toEqual("Engineer");
             // setter with new role
-            TestEng.setRole("testRole");
+            TestEng.Role = "testRole";
             // test getter with new role
-            expect(TestEng.getRole()).toEqual("testRole");
+            expect(TestEng.Role).toEqual("testRole");
         });
 
         it("should exercise github getter and setter properly", () => {
 
             // test original github
-            expect(TestEng.getGithub()).toEqual("https://github.com/fjunior1");
+            expect(TestEng.Github).toEqual("https://github.com/fjunior1");
             // setter with new github
-            TestEng.setGithub("github.com/testUser");
+            TestEng.Github = "github.com/testUser";
             // test getter with new github
-            expect(TestEng.getGithub()).toEqual("github.com/testUser");
+            expect(TestEng.Github).toEqual("github.com/testUser");
         });
 
     });

@@ -7,7 +7,7 @@ const intern = require("../lib/intern");
 describe("intern class test", () => {
     describe("Instantiation", () => {
         it("should instantiate an intern object", () => {
-            const Testintern = new Intern();
+            const Testintern = new intern();
 
             expect("name" in Testintern).toEqual(true);
             expect("id" in Testintern).toEqual(true);
@@ -18,7 +18,7 @@ describe("intern class test", () => {
     });
 
     describe("Member initialization", () => {
-        const Testintern = new Intern("John", "1001", "John@email.com", "GATECH");
+        const Testintern = new intern("John", "1001", "John@email.com", "GATECH");
 
         it("Should set all members (name, Id, email, role and github) with proper information on class initialization", () => {
 
@@ -26,61 +26,61 @@ describe("intern class test", () => {
             expect(Testintern.id).toEqual("1001");
             expect(Testintern.email).toEqual("John@email.com");
             expect(Testintern.role).toEqual("intern"); // default behavior for intern object
-            expect(Testintern.github).toEqual("GATECH");
+            expect(Testintern.school).toEqual("GATECH");
         })
     });
 
     describe("getters and setters", () => {
-        const Testintern = new Intern("John", "1001", "John@email.com", "GATECH");
+        const Testintern = new intern("John", "1001", "John@email.com", "GATECH");
 
         it("should exercise name getter and setter properly", () => {
 
             // test original name
-            expect(Testintern.getName()).toEqual("John");
+            expect(Testintern.Name).toEqual("John");
             // setter with new name
-            Testintern.setName("Test Name");
+            Testintern.Name = "Test Name";
             // test getter with new name
-            expect(Testintern.getName()).toEqual("Test Name");
+            expect(Testintern.Name).toEqual("Test Name");
         });
 
         it("should exercise id getter and setter properly", () => {
 
             // test original id
-            expect(Testintern.getId()).toEqual("1001");
+            expect(Testintern.Id).toEqual("1001");
             // setter with new id
-            Testintern.setId("1234");
+            Testintern.Id = "1234";
             // test getter with new id
-            expect(Testintern.getId()).toEqual("1234");
+            expect(Testintern.Id).toEqual("1234");
         });
 
         it("should exercise email getter and setter properly", () => {
 
             // test original email
-            expect(Testintern.getEmail()).toEqual("email");
+            expect(Testintern.Email).toEqual("John@email.com");
             // setter with new email
-            Testintern.setEmail("test@test.com");
+            Testintern.Email = "test@test.com";
             // test getter with new email
-            expect(Testintern.getEmail()).toEqual("test");
+            expect(Testintern.Email).toEqual("test@test.com");
         });
 
         it("should exercise role getter and setter properly", () => {
 
             // test original role
-            expect(Testintern.getRole()).toEqual("internineer");
+            expect(Testintern.Role).toEqual("intern");
             // setter with new role
-            Testintern.setRole("testRole");
+            Testintern.Role = "testRole";
             // test getter with new role
-            expect(Testintern.getRole()).toEqual("testRole");
+            expect(Testintern.Role).toEqual("testRole");
         });
 
         it("should exercise school getter and setter properly", () => {
 
             // test original school
-            expect(Testintern.getSchool()).toEqual("GATECH");
+            expect(Testintern.School).toEqual("GATECH");
             // setter with new school
-            Testintern.setSchool("USF");
+            Testintern.School = "USF";
             // test getter with new school
-            expect(Testintern.getSchool()).toEqual("USF");
+            expect(Testintern.School).toEqual("USF");
         });
 
     });
