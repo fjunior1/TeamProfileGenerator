@@ -14,7 +14,8 @@ const fs = require("fs")
 //const Empl = require("./lib/Empl")
 const Mgr = require("./lib/Mgr")
 const Eng = require("./lib/Eng")
-const intern = require("./lib/Intern");
+const Intern = require("./lib/Intern"); // intern is a class, begni with uppercase
+const generateCards = require("./lib/generateCards.js")
 const { ENGINE_METHOD_RSA } = require("constants");
 
 
@@ -195,37 +196,49 @@ function closeHtml(dataStr) {
 //call function to request input and then save to HTML file
 function ProcessUserInput() {
 
-    htmlStr = { data: "" }; // object with string to add Html text
+    let htmlStr = []/*{ data: "" }*/; // object with string to add Html text
 
     console.log(" ---   Team  formation Application ---\n");
-    startHtml(htmlStr);
+    // startHtml(htmlStr,beginHTML);
 
     inquirer.prompt(requests).then((answers) => {
 
         const mgr = new Mgr(answers.mgrName, answers.mgrId, answers.mgrEmail, answers.mgrOfc);
-        addCard(htmlStr, mgr);
+        generateCards.addMgrCard(/*htmlStr,*/ mgr);
 
         if (answers.Employees) {
 
             for (let i = 0; i < answers.Employees.length; i++) {
                 // add employee cards here
-                addCard(htmlStr, answers.Employees[i]);
+                console.log(answers.Employees[i]);
+                if (answers.Employees[i].role === "engineer") {
+                    let tmpEng = new Eng(answers.Employees[i].name,
+                                        answers.Employees[i].id,
+                                        answers.Employees[i].email,
+                                        answers.Employees[i].github);
+                    generateCards.addEngCard( answers.Employees[i]);
+                } else {
+                    // it is an intern
+
+                    generateCards.addInternCard( answers.Employees[i]);
+                }
             }
         }
 
-        // closing HTML file content
-        closeHtml(htmlStr);
+        // closing HTML file contentnode
+        htmlStr = generateCards.addEndHTML();
+
 
         //Open file and write the data
-        fs.writeFile("./dist/index.html", htmlStr.data, (error) => {
-            if (error) {
+        console.log(htmlStr.join(""));
+        fs.writeFile("./dist/index.html", htmlStr.join(""), (error) => {
+            if (!error) {
                 console.log("SUCCESS: HTML created !!!");
             } else {
-                console.log("Error writing output HTML file")
+                console.log("Error writing output HTML file" + error)
             }
         });
     });
-
 
 };
 

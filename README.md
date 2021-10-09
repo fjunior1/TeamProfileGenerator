@@ -88,6 +88,7 @@ Each component of the application is tested with jest.
     - cards           [https://www.w3schools.com/howto/howto_css_cards.asp]
     - materialize CSS [https://www.tutorialspoint.com/materialize/materialize_cards.htm]
     - cloud convert   [https://cloudconvert.com/mp4-to-gif] 
+    - REGEX           [https://regex101.com/]
 
 ## License
 GNU General Public License 3.0  

@@ -4,9 +4,9 @@
   "description": "Team profile HTML generator. This project creates a list of team members with important contact information for each.",
   "main": "index.js",
   "dependencies": {
-    "inquirer": "^8.1.1",
+    "inquirer": "^8.2.0",
     "inquirer-loop": "^0.3.0",
-    "jest": "^27.0.6"
+    "jest": "^27.2.5"
   },
   "devDependencies": {},
   "scripts": {
