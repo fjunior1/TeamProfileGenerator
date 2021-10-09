@@ -98,6 +98,6 @@ GNU General Public License 3.0
 ![example running app](./dist/test-video.gif)
 
 screenshot of page  
-![Alt text](./assets/scr_pc.jpg?raw=true "screenshot of html on PC")
-screenshott of mobile page  
+![Alt text](./assets/scr_pc.jpg?raw=true "screenshot of html on PC")  
+screenshot of mobile page  
 ![Alt text](./assets/scr_mobile.jpg?raw=true "screenshot of html on mobile")
