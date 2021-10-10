@@ -11,7 +11,7 @@ This applicaiton get user input and creates a webpage with the cards of employee
 - [INSTALLATION](#Installation)
 - [USAGE](#Usage)
 - [TESTS](#Tests)
-- [TOOLS](#Packages-and-tools-used)
+- [PACKAGES-AND-TOOLS-USED](#Packages-and-tools-used)
 - [LICENSE](#License)
 - [EXAMPLES](#Examples)
 
