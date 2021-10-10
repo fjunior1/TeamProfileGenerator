@@ -11,10 +11,9 @@ inquirer.registerPrompt("inquirerLoop", require("inquirer-loop")(inquirer));
 const fs = require("fs")
 
 // import the roles
-//const Empl = require("./lib/Empl")
 const Mgr = require("./lib/Mgr")
 const Eng = require("./lib/Eng")
-const Intern = require("./lib/Intern"); // intern is a class, begni with uppercase
+const Intern = require("./lib/Intern"); // intern is a class, begin with uppercase
 const generateCards = require("./lib/generateCards.js")
 const { ENGINE_METHOD_RSA } = require("constants");
 
@@ -176,35 +175,19 @@ const requests = [
     },
 ]
 
-/*
-Function to add a card to the HTML generated
-*/
-function startHtml(dataStr) {
-
-
-}
-
-function addCard(dataStr, employee) {
-
-
-}
-
-function closeHtml(dataStr) {
-
-}
 
 //call function to request input and then save to HTML file
 function ProcessUserInput() {
 
-    let htmlStr = []/*{ data: "" }*/; // object with string to add Html text
+    let htmlStr = []; // object with string to add Html text
 
     console.log(" ---   Team  formation Application ---\n");
-    // startHtml(htmlStr,beginHTML);
+ 
 
     inquirer.prompt(requests).then((answers) => {
 
         const mgr = new Mgr(answers.mgrName, answers.mgrId, answers.mgrEmail, answers.mgrOfc);
-        generateCards.addMgrCard(/*htmlStr,*/ mgr);
+        generateCards.addMgrCard( mgr);
 
         if (answers.Employees) {
 
@@ -216,14 +199,14 @@ function ProcessUserInput() {
                         answers.Employees[i].id,
                         answers.Employees[i].email,
                         answers.Employees[i].github);
-                    generateCards.addEngCard(tmpEng/*answers.Employees[i]*/);
+                    generateCards.addEngCard(tmpEng);
                 } else {
                     // it is an intern
                     let tmpIntern = new Intern(answers.Employees[i].name,
                         answers.Employees[i].id,
                         answers.Employees[i].email,
                         answers.Employees[i].school);
-                    generateCards.addInternCard(tmpIntern/*answers.Employees[i]*/);
+                    generateCards.addInternCard(tmpIntern);
                 }
             }
         }
@@ -232,7 +215,6 @@ function ProcessUserInput() {
         htmlStr = generateCards.addEndHTML();
 
         //Open file and write the data
-        console.log(htmlStr.join(""));
         fs.writeFile("./dist/index.html", htmlStr.join(""), (error) => {
             if (!error) {
                 console.log("SUCCESS: HTML created !!!");
