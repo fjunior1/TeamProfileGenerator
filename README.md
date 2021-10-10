@@ -94,7 +94,7 @@ GNU General Public License 3.0
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 ## Example
-![example running app](./dist/test-video.gif)
+![example running app](./assets/TeamGeneratorAnim.gif)
 
 screenshot of page  
 ![Alt text](./assets/scr_pc.jpg?raw=true "screenshot of html on PC")  
