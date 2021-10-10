@@ -15,7 +15,7 @@ This applicaiton get user input and creates a webpage with the cards of employee
 - [LICENSE](#License)
 - [EXAMPLES](#Examples)
 
-
+ 
 ## Requirements
 There is an acceptance criteria for this project. It is as follows:
 
